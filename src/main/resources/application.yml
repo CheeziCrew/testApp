@@ -1,0 +1,26 @@
+openapi:
+  name: api-service-snailmail-sender
+  title: SnailMailSender
+  version: '@project.version@'
+spring:
+  application:
+    name: api-snailmail-sender
+  main:
+    banner-mode: 'off'
+  security:
+    oauth2:
+      client:
+        registration:
+          citizen:
+            authorization-grant-type: client_credentials
+            provider: citizen
+integration:
+  citizen:
+    connect-timeout: 5
+    read-timeout: 30
+logbook:
+  body-filters:
+    # Exclude base64-encoded content from incoming requests.
+    json-Path:
+      - key: '$.attachments[*].content'
+        value: '[base64]'
