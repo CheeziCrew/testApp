@@ -1,0 +1,8 @@
+name: Call CodeQL
+
+on:
+  push:
+
+jobs:
+  call-echo-workflow:
+    uses: cheezi0747/testConfig/.github/workflows/codeql.yml@main

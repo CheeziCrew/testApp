@@ -1,0 +1,8 @@
+name: Call Maven CI
+
+on:
+  push:
+
+jobs:
+  call-echo-workflow:
+    uses: cheezi0747/testConfig/.github/workflows/maven_ci.yml@main
