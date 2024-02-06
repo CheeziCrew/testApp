@@ -5,4 +5,4 @@ on:
 
 jobs:
   call-echo-workflow:
-    uses: cheezi0747/testing/.github/workflows/echo.yml@3d2190679b0188d21d89fe17b713347d6e6a33b2
+    uses: cheezi0747/testConfig/.github/workflows/echo.yml@main
