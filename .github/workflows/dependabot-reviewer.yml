@@ -11,4 +11,4 @@ jobs:
     uses: CheeziCrew/testConfig/.github/workflows/common-dependabot-reviewer.yml@main
     env:
       PR_URL: ${{github.event.pull_request.html_url}}
-      GITHUB_TOKEN: ${{secrets.CHEEZI_DEPENDABOT_REVIEWER_TOKEN}}
+      GH_TOKEN: ${{secrets.CHEEZI_DEPENDABOT_REVIEWER_TOKEN}}
