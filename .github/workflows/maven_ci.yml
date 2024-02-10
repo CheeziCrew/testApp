@@ -5,4 +5,4 @@ on:
 
 jobs:
   call-echo-workflow:
-    uses: cheezi0747/testConfig/.github/workflows/maven_ci.yml@main
+    uses: CheeziCrew/testConfig/.github/workflows/java-maven-ci.yml@main
