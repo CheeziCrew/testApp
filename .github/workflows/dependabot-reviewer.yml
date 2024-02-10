@@ -6,6 +6,10 @@ permissions:
   pull-requests: write
   contents: write
 
+env:
+  PR_URL: ${{github.event.pull_request.html_url}}
+  GH_TOKEN: ${{secrets.CHEEZI_DEPENDABOT_REVIEWER_TOKEN}}
+
 jobs:
   shared-workflows:
     uses: CheeziCrew/testConfig/.github/workflows/common-dependabot-reviewer.yml@main
