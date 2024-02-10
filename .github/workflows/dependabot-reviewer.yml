@@ -1,7 +1,6 @@
-name: "Dependabot reviewer"
+name: "Call Dependabot reviewer"
 
-on:
-  workflow_call:
+on: pull_request_target
 
 permissions:
   pull-requests: write
